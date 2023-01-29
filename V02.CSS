@@ -1,0 +1,27 @@
+.bdy_class{
+    width: 1100px;
+    margin:0px auto
+}
+h1{
+    text-align: center;
+    background-color: grey;
+    padding: 10px 0px;
+}
+section {
+    border: 2px solid lightgrey;
+    padding:10px
+}
+.sec01{
+    margin-bottom: 30px;
+}
+section h2 {
+    text-transform: uppercase;
+}
+footer {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    text-size-adjust: 20px;
+    text-decoration: brown;
+}
