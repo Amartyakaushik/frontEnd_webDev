@@ -9,6 +9,16 @@
         td{
             color: red;
         }
+        
+        /* Id selector Style */
+        #firstHeading{
+            color: blue;
+        }
+
+        /* class selector style */
+        .gray{
+            color: gray;
+        }
     </style>
 </head>
 <body>
@@ -17,12 +27,14 @@
             <div >
                 <form action="action.php" >
                     <table style="background-color: rgb(70, 110, 11);" >
-                        <tr>
+
+                        
+                        <tr id="firstHeading">
                             <td>First name</td>
                             <td><input name="firstname" type="text" placeholder="First Name"></td>
                         </tr>
     
-                        <tr>
+                        <tr class="gray">
                             <td>Last name</td>
                             <td><input name="lastname" type="text" placeholder="Last Name"></td>
                         </tr>
@@ -37,12 +49,12 @@
                         <tr>
                             <td>Select city</td>
                             <td>
-                                <section name="Cities">
+                                <select name="Cities">
                                     <option value="Noida">Noida</option>
                                     <option value="Delhi">Delhi</option>
                                     <option value="Jalandhar">Jalandhar</option>
                                     <option value="Mummbai">Mummbai</option>
-                                </section>
+                                </select>
                             </td>
                         </tr>
     
