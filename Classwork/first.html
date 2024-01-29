@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Before the script...</p>
+    <script>
+        alert('Hello World!');
+        document.getElementById("demo").innerHTML=5+6;
+        document.write(5*7);
+    </script>
+    <p>...After the script.</p>
+    <button onclick="window.print()">Print this line...</button>
+
+    <script src="first.js"></script>
+    <button type="button" onclick='document.write("This is the information i got after clicking on button")'>Click me</button>
+
+    <!-- Bitwise Operators in javascript -->
+    <script>
+        document.write("demo").innerHTML=5&1;
+        document.write("demo").innerHTML=5 | 2;
+        document.write("demo").innerHTML=5 ^ 2;
+    </script>
+</body>
+</html>
+
+<!-- there are various ways to apply apply javascript in the html
+1) inner html  using innerhtml
+2) document.getElementById("Idname") -->
