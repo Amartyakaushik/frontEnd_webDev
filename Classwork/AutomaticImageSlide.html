@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img name="slide" width="50%" height="60%">
+
+    <script>
+        var i=0;
+        var images=Array();
+        images[0]='avt01.peg';
+        images[1]='avt02.peg';
+        images[2]='bg_vegetable.peg';
+        images[3]='homepage_bck.jpg';
+
+        function changeImage(){
+            if(i < (images.length -1)){
+                i++;
+                images[i];
+            }else{
+                i=0;
+            }
+        }
+
+        document.slide.changeImage();
+    </script>
+</body>
+</html>
