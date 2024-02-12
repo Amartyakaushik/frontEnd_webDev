@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Hover" id="btn">
+    
+    <script type="text/Javascipt">
+
+        btn.addEventListener("mouseover",changeColorOnMouseOver());
+        btn.addEventListener("mouseout",changeColorOnMouseOut());
+
+        function changeColorOnMouseOver(){
+            this.style.background='red';
+            this.style.color='yellow';
+        }
+
+        function changeColorOnMouseOut(){
+            this.style.background='cadetblue';
+            this.style.color='white';
+        }
+    </script>
+</body>
+</html>
