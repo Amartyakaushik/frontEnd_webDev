@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascipt Object Properties</h2>
+    <p>Looping object property values:</p>
+    <p id="demo"></p>
+
+    <script>
+        const Veg={
+            fname:"Baigan",
+            lname: "Nenua",
+            priceF: 1200,
+            pirceL:120,
+
+             detail: function() {
+                return this.fname + " " + this.lname + " " + this.priceF + " " + this.pirceL;
+            }
+        };
+
+        // let txt="";
+        // for(let x in Veg){
+        //     txt += Veg[x] + " ";
+        // }
+
+        // document.getElementById("demo").innerHTML=txt;
+        document.getElementById("demo").innerHTML=Veg.detail();
+
+    </script>
+</body>
+</html>
+
+<!-- 11-Feb -->
