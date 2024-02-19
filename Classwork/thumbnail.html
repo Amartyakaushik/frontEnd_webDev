@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <img src="avt01.jpeg" alt="homepage_bck" id="mainImage" style="border: 5px solid grey;" height="500px" width="600px" style="align-items: center;">
+    <br>
+
+    <div id="divId" onclick="changeImageOnClick()" onmouseover="f1()" onmouseout="f2()">
+    <img src="avt01.jpeg" alt="" class="imgStyle" id="1" height="125px" width="150px">
+    <img src="avt02.jpeg" alt="" class="imgStyle" id="2" height="125px" width="150px">
+    <img src="bg_vegetable.jpg" alt="" class="imgStyle" id="3" height="125px" width="150px">
+    <img src="homepage_bck.jpg" alt="" class="imgStyle" id="4" height="125px" width="150px">
+    </div>
+
+    <script type="text/javascript">
+        function changeImageOnClick(){
+            var x=event.target;
+            if(x.tagName=="IMG"){
+                a=x.getAttribute("src");
+                document.getElementById("mainImage").setAttribute("src",a);
+            }
+        }
+
+        function f1(){
+            var x=event.target;
+            x.style.cursor="pointer";
+            x.style.borderColor="red";
+        }
+
+        function f2(){
+            var x=event.target;
+            // x.style.cursor='pointer';
+            x.style.borderColor="blue";
+        }
+    </script>
+</body>
+</html>
+
+<!-- 19-feb -->
