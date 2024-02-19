@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myParagraph">This is the initial text content.</p> 
+    <button id="myButton">Toggle Image Visibility</button> 
+    <img src="avt01.jpeg" alt="avt01" style="display: block;" id="myImage">
+    <!-- <img id="myImage" src="avt01.jpeg"  style="display: none;" />  -->
+    
+    
+    <script> 
+  paragraph.textContent = "This is the new text content!";
+
+  const image = document.getElementById("myImage");
+
+  const button = document.getElementById("myButton");
+
+  button.addEventListener("click", () => {
+    if (image.style.display === "none") {
+      image.style.display = "block";
+    } else {
+      image.style.display = "none";
+    }
+  });
+
+  const body = document.querySelector("body");
+  body.style.backgroundColor = "lightblue";
+  const newParagraph = document.createElement("p");
+  newParagraph.textContent = "This is a new paragraph!";
+  body.appendChild(newParagraph);
+</script>
+</body>
+</html>
