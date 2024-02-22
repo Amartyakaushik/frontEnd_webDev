@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body style="text-align: center;">
-    <img src="avt01.jpeg" alt="homepage_bck" id="mainImage" style="border: 5px solid grey;" height="500px" width="600px" style="align-items: center;">
+    <img src="avt01.jpeg" alt="homepage_bck" id="mainImage" style="border: 4px solid grey;" height="500px" width="600px" style="align-items: center;" onmouseover="this.style.borderColor='grey' " onmouseout="this.style.borderColor='black' ">
     <br>
 
     <div id="divId" onclick="changeImageOnClick()" onmouseover="f1()" onmouseout="f2()">
-    <img src="avt01.jpeg" alt="" class="imgStyle" id="1" height="125px" width="150px">
-    <img src="avt02.jpeg" alt="" class="imgStyle" id="2" height="125px" width="150px">
-    <img src="bg_vegetable.jpg" alt="" class="imgStyle" id="3" height="125px" width="150px">
-    <img src="homepage_bck.jpg" alt="" class="imgStyle" id="4" height="125px" width="150px">
+    <img style="border: 3px solid blue;" src="avt01.jpeg" alt="" class="imgStyle" id="1" height="125px" width="150px">
+    <img style="border: 3px solid blue;" src="avt02.jpeg" alt="" class="imgStyle" id="2" height="125px" width="150px">
+    <img style="border: 3px solid blue;" src="bg_vegetable.jpg" alt="" class="imgStyle" id="3" height="125px" width="150px">
+    <img style="border: 3px solid blue;" src="homepage_bck.jpg" alt="" class="imgStyle" id="4" height="125px" width="150px">
     </div>
 
     <script type="text/javascript">
@@ -28,7 +28,7 @@
         function f1(){
             var x=event.target;
             x.style.cursor="pointer";
-            x.style.borderColor="red";
+            x.style.borderColor="green";
         }
 
         function f2(){
