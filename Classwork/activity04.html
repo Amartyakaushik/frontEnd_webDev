@@ -8,11 +8,11 @@
 <body>
     <p id="myParagraph">This is the initial text content.</p> 
     <button id="myButton">Toggle Image Visibility</button> 
-    <img src="avt01.jpeg" alt="avt01" style="display: block;" id="myImage">
-    <!-- <img id="myImage" src="avt01.jpeg"  style="display: none;" />  -->
+    <img src="avt01.jpeg" alt="avt01" style="display: none;" id="myImage">
     
     
     <script> 
+  const paragraph= document.getElementById("myParagraph");
   paragraph.textContent = "This is the new text content!";
 
   const image = document.getElementById("myImage");
