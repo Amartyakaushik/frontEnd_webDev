@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            margin-top: 200px;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            background-color: yellow;
+        }
+
+        #move{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            background-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="move" ></div>
+    </div>
+
+    <button onclick="move()">Click me!</button>
+
+    <script>
+        function move(){
+
+            var id=null;
+            const element=document.getElementById("move");
+            let pos = 0;
+            clearInterval(id);
+            id=setInterval(anim,5);
+            function anim(){
+                if(pos == 250){
+                    clearInterval(id);
+                }else{
+                    pos++;
+                    element.style.top = pos+ "px";
+                    element.style.left = pos+ "px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- 23-feb -->
