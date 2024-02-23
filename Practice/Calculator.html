@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.767), #585858);
+            padding: 20px;
+        }
+
+        #resContainer{
+            margin-top: 10px;
+        }
+
+        body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwsbN_9Jad3jNPiagrlOxaFskEB9r3qxqFatbnU7I70Q&s);
+            background-size: cover;
+        }
+        
+        h3{
+            font-size: 30px;
+            font-style:oblique;
+            color: white;
+            margin-top: 100px;
+        }
+
+        img{
+            margin-top: 40px;
+            height: 200px;
+            background: transparent;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h3>Calculator</h3>
+        <div>
+            <form action="">
+                <input type="text" id="opr1" placeholder="Enter your first number">
+                <select name="opt" id="opt">
+                    <option  value="+">+</option>
+                    <option  value="-">-</option>
+                    <option  value="/">/</option>
+                    <option  value="*">x</option>
+                </select>
+                <input type="number" id="opr2" placeholder="Enter your second number">
+            </form>
+            <form action="" id="resContainer">
+                <button type="button" onclick="calculate()" >submit</button>
+                <input type="number" name="result" id="res" >
+            </form>
+        </div>
+
+        <img src="avt01.jpeg" alt="buddy" >
+    </center>
+
+
+    <script type="text/javascript">
+
+        function calculate(){
+            let opr1= document.getElementById("opr1").value;
+            let opr2= document.getElementById("opr2").value;
+            let opt= document.getElementById("opt").value;
+                if(opt =='+'){
+                result= parseInt(opr1) + parseInt(opr2);
+            }else if(opt=="-"){
+                result= opr1 - opr2;
+            }else if(opt=="/"){
+                    result= opr1 / opr2;
+            }else if(opt=="*"){
+                result= opr1 * opr2;
+            }
+            document.getElementById("res").value=result;
+            
+        }
+    </script>
+</body>
+</html>
