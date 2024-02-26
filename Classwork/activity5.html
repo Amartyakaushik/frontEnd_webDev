@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .full-size-image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-size-image">
+        <img src="" alt="Full Size Image" id="fullSizeImage">
+    </div>
+    <div class="thumbnails">
+        <img src="avt01.jpeg" alt="Image 1" class="thumbnail" id="thumbnail1">
+        <img src="avt02.jpeg" alt="Image 2" class="thumbnail" id="thumbnail2">
+        <img src="bg_vegetable.jpg" alt="Image 3" class="thumbnail" id="thumbnail3">
+    </div>
+    <h3>Click on each image to change the image</h3>
+    <button type="button"  id="button">CLick me</button>
+    <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const fullSizeImage = document.getElementById('fullSizeImage');
+        const button= document.getElementById('button')
+
+
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                fullSizeImage.src = thumbnail.src;
+                document.querySelector('.full-size-image').style.display = 'block';
+            });
+        });
+
+
+    </script>
+</body>
+</html>
