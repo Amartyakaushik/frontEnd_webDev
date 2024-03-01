@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>LOVELY PROFESSIONAL UNIVERSITY <p> India </p></h1>
+    <h2>PUNJAB</h2>
+    <img src="homepage_bck.jpg" height="300" width="300" > <br>
+    <a href="https://www.lpu.in" id="lpu"></a>
+    <button id="b1">TEXT</button>
+    <button id="b2">HTML</button>
+    <button id="b3">ATTRIBUTE</button>
+    <button id="b4">Remove image</button>
+
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $("#b1").click(() => {
+                $("h1").text("NEW TEXT");
+            });
+
+            $("#b2").click(() => {
+                $("h2").html("<em>NEW HTML</em>");
+            });
+
+            $("#b3").click(() => {
+                $("#lpu").attr("href", "https://www.google.com/search?q=google.con&rlz=1C1CHBF_enIN1027IN1027&oq=google.con&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIPCAEQABgKGIMBGLEDGIAEMg8IAhAAGAoYgwEYsQMYgAQyDwgDEAAYChiDARixAxiABDIPCAQQABgKGIMBGLEDGIAEMhIIBRAAGAoYgwEYsQMYgAQYigUyCQgGEAAYChiABDIGCAcQRRg80gEIMjk0OWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8");
+            });
+
+            // $("#b3").click(() => {
+            //     $("img").attr("src","avt01.jpeg");
+            // });
+
+            $("#b3").click(() => {
+    var img = $("img");
+    if (img.attr("src") === "homepage_bck.jpg") {
+        img.attr("src", "_blank");
+    }
+    img.attr("src", "avt01.jpeg");
+});
+
+            $("#b4").click(() => {
+    $("img").attr("src", "_blank");
+});
+
+let previousSrc = $("img").attr("src");
+
+$("#b3").click(() => {
+    var img = $("img");
+    if (img.attr("src") === "avt01.jpeg") {
+        img.attr("src", previousSrc);
+    } else {
+        previousSrc = img.attr("src");
+        img.attr("src", "homepage_bck.jpg");
+    }
+});
+            // Additional code for testing the CDN link
+            $(document).ajaxStart(() => {
+                console.log("jQuery CDN is working!");
+            });
+        });
+    </script>
+</body>
+</html>
