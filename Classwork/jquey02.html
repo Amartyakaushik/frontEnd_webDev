@@ -1,0 +1,65 @@
+<!-- jQuery is an small nd lightweight JavaSCript library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <h1>@@@@@@@@@@@@ @@@@@ @@@@</h1>
+    <h2>???????????? ??????????????</h2>
+    <h3>%%%%%%%%%%% %%%%%%%%%%%%%%</h3>
+    <p>!!!!!!!!!! !!!!!!!!!</p>
+    <button id="b1">TEXT</button>
+    <button id="b2">HTML</button>
+    <button id="b3">HTML</button>
+    <button id="b4">TEXT</button> -->
+
+    <script type="text/javascript">
+        // $(document).ready(()=>{
+        //     $("h1").click(()=>{
+        //         $("h1").css("font-size", "70px");
+        //         $("h1").css("color", "red");
+        //     });
+        $(document).ready(()=>{
+            // $("#b1").click(()=>{
+            //     $("h1").text("LOVELY PROFESSIONAL UNIVERSITY");
+            // });
+            // $("#b2").click(()=>{
+            //     $("h2").html("<i>Punjab, India</i>");
+            // });
+            // $("#b3").click(()=>{
+            //     $("h3").html("<img src='homepage_bck.jpg' height='300' width='300'>");
+            // });
+            // $("#b4").click(()=>{
+            //     $("p").text("Kolkata, West Bengal, India");
+            // });
+
+            
+            $("#b1").click(()=>{
+                alert($("h1").text());
+            });
+            $("#b2").click(()=>{
+                alert($("h1").html());
+            });
+            $("#b3").click(()=>{
+                alert($("#lpu").attr("href"));
+            });
+            $("img").click(()=>{
+                $("#lpu").attr("href");
+            });
+
+        });
+    </script>
+
+    <h1>LOVELY PROFESSIONAL UNIVERSITY <P> India </P></h1>
+    <h2>PUNJAB</h2>
+    <img src="homepage_bck.jpg" height="300" width="300" > <br>
+    <a href="https://www.lpu.in" id="lpu"></a>
+    <button id="b1">TEXT</button>
+    <button id="b2">HTML</button>
+    <button id="b3">ATTRIBUTE</button>
+</body>
+</html>
