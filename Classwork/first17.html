@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+    <script>
+        var persondata={
+            "person":{
+                "name":"john",
+                "age":30,
+                "address":{
+                    "city":"jalandhar",
+                    "zipcode":"10001",
+
+                },
+                "contacts":[
+                    {
+                        "type":"email",
+                        "value":"john@gmail.com"
+                    },
+                    {
+                        "type":"phone",
+                        "value":"8956396123"
+                    }
+                ]
+
+            }
+        };
+        
+        // $(document).ready(function(){
+        //     $.getJSON('data.Json',function(data)){
+        //         $.each(data,function(index,user)){
+        //             $('#user-table tbody').append('<tr><td>'+user.id + '</td><td>' + user.name + '</td><td>' + user.age + '</td><td>' + user.Dep + '</td><td>'  + user.Add)
+        //         }
+        //     }
+        // })
+        var jsonString=JSON.stringify(persondata);
+        document.getElementById("abc").innerHTML=jsonString;
+    </script>
+</body>
+</html>
