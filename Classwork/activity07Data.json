@@ -1,0 +1,30 @@
+[
+    {
+        "registrationNo" : 12212,
+        "name" : "Kedar nath singh",
+        "email" : "kedarnathsingh@gmail.con",
+        "phone" : 9838439934,
+        "address" : "Punjab"
+    },
+    {
+        "registrationno" : 12218122,
+        "name" : "Shubham Yadav",
+        "email" : "shubhamyadam@gmail.con",
+        "phone" : 9838439934,
+        "address" : "Agra"
+    },
+    {
+        "registrationno" : 12218134,
+        "name" : "Pawan Dubey",
+        "email" : "pawandubey@gmail.con",
+        "phone" : 9838439934,
+        "address" : "Bihar"
+    },
+    {
+        "registrationno" : 12221812,
+        "name" : "Bhashkar",
+        "email" : "Bhashkar@gmail.con",
+        "phone" : 9838439934,
+        "address" : "India"
+    }
+]
