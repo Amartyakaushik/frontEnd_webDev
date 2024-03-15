@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "name" : "Kedar nath singh",
+        "age" : 118,
+        "Dep" : "CSE",
+        "Add" : "LPU"
+    },
+    {
+        "id" : 2,
+        "name" : "Keduu",
+        "age" : 158,
+        "Dep" : "CSE",
+        "Add" : "LPU"
+    },
+    {
+        "id" : 3,
+        "name" : "Keduu singh",
+        "age" : 148,
+        "Dep" : "CSE",
+        "Add" : "LPU"
+    },
+    {
+        "id" : 4,
+        "name" : "Keduu singh",
+        "age" : 148,
+        "Dep" : "CSE",
+        "Add" : "LPU"
+    },
+    {
+        "id" : 5,
+        "name" : "Keduu singh",
+        "age" : 148,
+        "Dep" : "CSE",
+        "Add" : "LPU"
+    }
+]
