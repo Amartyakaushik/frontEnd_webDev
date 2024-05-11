@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object Example</title>
+</head>
+<body>
+    <script>
+        // Create a JSON object that includes nested objects
+        const participants = [
+            {
+                name: "John Doe",
+                age: 30,
+                address: {
+                    street: "123 Main St",
+                    city: "Anytown",
+                    state: "CA",
+                    zip: "12345"
+                },
+                details: {
+                    occupation: "Software Engineer",
+                    hobbies: ["Coding", "Reading", "Hiking"]
+                }
+            },
+            {
+                name: "Jane Smith",
+                age: 28,
+                address: {
+                    street: "456 Oak St",
+                    city: "Anytown",
+                    state: "CA",
+                    zip: "67890"
+                },
+                details: {
+                    occupation: "Data Analyst",
+                    hobbies: ["Painting", "Photography", "Traveling"]
+                }
+            }
+        ];
+
+        const participantsJSON = JSON.stringify(participants);
+        const participantsObj = JSON.parse(participantsJSON);
+        console.log(participantsObj);
+    </script>
+</body>
+</html>
